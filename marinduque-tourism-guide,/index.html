@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marinduque Tourism Guide</title>
+  <meta name="description" content="Discover beaches, heritage sites and scenic spots in Marinduque." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" aria-hidden="true"><span class="logo-mark">M</span> Marinduque</div>
+      <nav class="main-nav" role="navigation" aria-label="Main">
+        <a href="#explore">Explore</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#plan">Plan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Island adventure awaits</p>
+          <h1>Marinduque Tourism Guide</h1>
+          <p class="lead">Explore beaches, heritage sites, mountains and island-hopping spots across Marinduque.</p>
+          <div class="hero-actions">
+            <a href="#explore" class="btn primary">Explore destinations</a>
+            <a href="#plan" class="btn ghost">Plan trip</a>
+          </div>
+        </div>
+        <figure class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="">
+        </figure>
+      </div>
+    </section>
+
+    <section id="explore" class="explore">
+      <div class="container">
+        <header class="section-head">
+          <h2>Explore destinations</h2>
+          <p class="muted">Search by name to quickly find places to visit.</p>
+        </header>
+
+        <div class="toolbar">
+          <label class="search" for="searchInput">
+            <span class="sr-only">Search destinations by name</span>
+            <input id="searchInput" type="search" placeholder="Search destinations by name..." aria-label="Search destinations by name">
+          </label>
+        </div>
+
+        <div id="resultsSummary" class="results-summary" aria-live="polite">Showing 0 destinations</div>
+        <section id="destinationList" class="grid" aria-live="polite"></section>
+      </div>
+    </section>
+
+    <section id="highlights" class="highlights">
+      <div class="container">
+        <h2>Why visitors love Marinduque</h2>
+        <div class="cards">
+          <article class="info-card"><div class="icon">🌊</div><h3>Beaches</h3><p>Quiet shores and clear waters.</p></article>
+          <article class="info-card"><div class="icon">🏛️</div><h3>Heritage</h3><p>Historic churches and local culture.</p></article>
+          <article class="info-card"><div class="icon">⛰️</div><h3>Nature</h3><p>Mountains, views, and island hopping.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan" class="plan">
+      <div class="container">
+        <h2>Plan your trip</h2>
+        <ol class="plan-list">
+          <li>Pick a town base: Boac, Gasan, Santa Cruz, Torrijos.</li>
+          <li>Mix beaches, heritage and island-hopping.</li>
+          <li>Visit in the dry season for best weather.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Marinduque Tourism Guide — sample demo data</p>
+      <p class="muted">Open-source demo • No backend</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
